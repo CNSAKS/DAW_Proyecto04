@@ -104,12 +104,4 @@ class db
 		return $str;
 	}
 	
-	public function setLugar($lugar,$descripcion,$fecha){
-		if($resultado = $this->descriptor->query("INSERT INTO lugares (nombre,descripcion,fecha) VALUES ('$lugar','$descripcion','$fecha')")){
-			echo "OK<br>";
-		}else{
-			echo "ERROR<br>";
-			 printf("Error: %s\n", $this->descriptor->error);
-		}
-	}
 }
